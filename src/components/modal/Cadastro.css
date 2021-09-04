@@ -1,0 +1,51 @@
+.modalcriarconta{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #29292E;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.form-cad{
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: #1A1A1D;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 4px;
+    width: 98%;
+    height: 50px;
+}
+
+.form-cad input{
+    background: transparent;
+    width: 100%;
+    outline-width: 0;
+    color: #E1E1E6;
+    border: none;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fecharmodalcriarconta{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: solid 20px white;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    top: 0;
+    right: 0;
+}

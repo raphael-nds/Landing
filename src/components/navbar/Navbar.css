@@ -1,0 +1,175 @@
+.navbar{
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    height: auto;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 30px;
+}
+
+.logo:hover{
+        background: linear-gradient(45deg, blue, green , yellow);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+}
+
+.itens{
+    display: inline-flex;
+    padding: 10px;
+}
+
+.op{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    padding: 10px 10px 5px 10px;
+}
+
+.op > li{
+    display: inline-flex;
+}
+
+.op:hover{
+    border-bottom: 2px solid #FFD800;   
+}
+
+.op-login{
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #FFD800;
+    border-radius: 20px;
+    margin-left: 80px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.op-login:hover{
+    background-color: #FFD800;
+    transition: 0.5s;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.icon-menu{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.navbar > button{
+    background-color: rgba(0,0,0,0.0);
+    color: white;
+    border-radius: 50%;
+    padding: 7px;
+    border: none;
+}
+
+.navbar .op-login{
+    display: block;
+    list-style: none;
+   }
+
+
+@media screen and (max-width: 768px) { 
+   .nav-links{
+       display: none;
+   }
+
+   .navbar{
+       display: flex;
+   }
+
+   .nav-itens-mobile{
+       position: absolute;
+       display: block;
+       list-style: none;
+       background-color: rgba(0,0,0,0.9);
+       left: 0;
+       top: 82px;
+       transition: all 0.5s ease-out;
+       width: 100%;
+       height: auto;
+       padding: 20px 0;
+       z-index: 999;
+   }
+
+   .nav-itens-mobile li{
+       padding: 30px 0;
+       margin: auto;
+       justify-content: center;
+       text-transform: uppercase;
+       
+   }
+   
+   .logo, .mobile-menu-icon{
+       display: block;
+   }
+
+   .op > li{
+       color: white;
+       padding: auto;
+       transition: all 0.5s ease-out;
+       width: 80%;
+   } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .nav-links{
+        display: none;
+    }
+ 
+    .navbar{
+        display: flex;
+    }
+ 
+    .nav-itens-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: rgba(0,0,0,0.9);
+        left: 0;
+        top: 82px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        z-index: 999;
+    }
+ 
+    .nav-itens-mobile li{
+        padding: 30px 0;
+        margin: auto;
+        justify-content: center;
+        text-transform: uppercase;
+        
+    }
+    
+    .logo, .mobile-menu-icon{
+        display: block;
+    }
+ 
+    .op > li{
+        color: white;
+       padding: auto;
+       transition: all 0.5s ease-out;
+       width: 80%;
+    }  
+}

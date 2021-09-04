@@ -1,0 +1,56 @@
+
+.section{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+}
+
+.section-itens{
+    width: calc(100% / 4);
+    margin: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 0;
+}
+
+.section-itens > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.section-itens > h2{
+    padding: 2px;
+}
+
+.section-itens > p{
+    padding: 25px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+@media screen and (max-width: 768px) { 
+    .section{
+        display: block;
+    }
+
+    .section-itens{
+        display: block;
+        width: 90%;
+        margin: auto ;
+    }
+}
+
+@media screen and ( min-width: 768px) and (max-width: 1024px){
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .section-itens {
+        width: 40%;
+        margin: auto;
+    }
+}
